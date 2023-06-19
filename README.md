@@ -2,7 +2,7 @@
 
 
 - Docker  run (image_name)
-	- **-p -> (0000:0000) port binding first is host second is container
+	- -p -> (0000:0000) port binding first is host second is container
 	- -d -> detach
 	- --name -> change the name of the container**
 	- -e -> Set an environnement variable
