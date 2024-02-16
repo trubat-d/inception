@@ -34,7 +34,7 @@ purge_images: stop prune_images
 
 f_purge: purge_images purge_volumes
 
-reset: purge reset_volumes
+reset: f_purge reset_volumes
 
 create_volumes:
 	sudo mkdir -p /home/trubat-d/data/wordpress
@@ -44,4 +44,4 @@ purge_volumes:
 	sudo rm -rf /home/trubat-d/data/wordpress
 	sudo rm -rf /home/trubat-d/data/mariadb
 
-reset_volumes: del_volumes create_volumes
+reset_volumes: purge_volumes create_volumes
